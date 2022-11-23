@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "KbiIeH2k0mjWTuTsqwf9D9Lfof5Mrpf4OdKxLh0yAKpT1ffKCOBv6DpU/6avPITjqX5t/vvNCRgNTath+MC1Og==",
+  "success": true,
+  "projectFilePath": "U:\\an3\\PR\\WebApplication1\\Server1\\Server1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Valentina Craevscaia\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Valentina Craevscaia\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Valentina Craevscaia\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Valentina Craevscaia\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Valentina Craevscaia\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Valentina Craevscaia\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Valentina Craevscaia\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

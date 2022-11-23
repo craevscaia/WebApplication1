@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ZmzEviJRtyTqMqE3oFdFqO1x3yGk5nDtAq2TTTUJc7I=",
+  "Source": "PartitionLeader",
+  "BasePath": "_content/PartitionLeader",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

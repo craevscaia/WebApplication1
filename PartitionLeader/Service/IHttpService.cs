@@ -5,5 +5,5 @@ namespace PartitionLeader.Service;
 
 public interface IHttpService
 {
-    public Task<Result?> Save([FromForm] Data fileData, string url);
+    public Task<Result?> SendToOtherServer([FromForm] Data fileData, string url);
 }

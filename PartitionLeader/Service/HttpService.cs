@@ -7,7 +7,7 @@ namespace PartitionLeader.Service;
 
 public class HttpService : IHttpService
 {
-    public async Task<Result?> Save(Data fileData, string url)
+    public async Task<Result?> SendToOtherServer(Data fileData, string url)
     {
         try
         {

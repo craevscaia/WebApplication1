@@ -36,16 +36,27 @@ public class ServerController : ControllerBase
         var fileData = uploadedFile.MapData(); //converting file to our model
         var result = await _dataStorageService.Save(fileData.Id, fileData);
 
-        var server1Result = await _httpService.Save(fileData, Settings.Settings.Server1);
+        var server1Result = await _httpService.SendToOtherServer(fileData, Settings.Settings.Server1);
         // var server2Result = await _httpService.Save(fileData, Settings.Settings.Server2);
-        
-        server1Result?.UpdateStatus();
-        result.UpdateStatus();
+
+        // server1Result?.UpdateStatus();
+        // result.UpdateStatus();
         return result;
     }
+
     [HttpPut("/update/{id}")]
     public async Task<Data> Update([FromRoute] int id, [FromBody] Data data)
     {
         return await _dataStorageService.Update(id, data);
+    }
+
+    [HttpDelete("/delete/{id}")]
+    public async Task<Result> Delete([FromRoute] int id, [FromBody] Data data)
+    {
+        await _dataStorageService.Delete(id);
+        return new Result()
+        {
+            StorageCount = _dataStorageService.GetAll().Count
+        };
     }
 }

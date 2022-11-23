@@ -28,4 +28,14 @@ public class DataStorageService : IDataStorageService
         var id = IdGenerator.GenerateId();
         return _dataStorageRepository.Save(id, fileData);
     }
+    
+    public Task<Data> Update(int id, Data data)
+    {
+        return _dataStorageRepository.Update(id, data);
+    }
+
+    public Task<Result> Delete(int id)
+    {
+        return _dataStorageRepository.Delete(id);
+    }
 }

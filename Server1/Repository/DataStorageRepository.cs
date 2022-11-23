@@ -30,4 +30,20 @@ public class DataStorageRepository : IDataStorageRepository
             LastProcessedId = id
         });
     }
+
+    public Task<Data> Update(int id, Data data)
+    {
+        return Task.FromResult(_storage[id] = data);
+    }
+
+    public Task<Result> Delete(int id)
+    {
+        _storage.Remove(id);
+        
+        return Task.FromResult(new Result()
+        {
+            StorageCount = _storage.Count,
+            LastProcessedId = id
+        });
+    }
 }

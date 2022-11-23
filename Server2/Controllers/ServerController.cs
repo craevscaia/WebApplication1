@@ -2,6 +2,7 @@ using Server.Models;
 using Server.Service;
 
 namespace Server.Controllers;
+
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
@@ -43,5 +44,23 @@ public class ServerController : ControllerBase
             LastProcessedId = data.Id
         };
     }
-    
+
+    [HttpPut("/update/{id}")]
+    public async Task<Data> Update([FromRoute] int id, [FromBody] Data data)
+    {
+        return await _dataStorageService.Update(id, data);
+    }
+
+    [HttpDelete("/delete/{id}")]
+    public async Task<Result> Delete([FromRoute] int id)
+    {
+        await _dataStorageService.Delete(id);
+
+
+        return new Result()
+        {
+            StorageCount = _dataStorageService.GetAll().Count,
+            LastProcessedId = id
+        };
+    }
 }

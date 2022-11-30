@@ -1,6 +1,6 @@
-namespace Server.Helpers;
+﻿namespace Server.Helpers;
 
-public class IdGenerator
+public static class IdGenerator
 {
     private static readonly Mutex Mutex = new();
     private static int _id = 0;

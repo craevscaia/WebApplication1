@@ -1,5 +1,8 @@
 using PartitionLeader.Repository;
-using PartitionLeader.Service;
+using PartitionLeader.Service.DataStorage;
+using PartitionLeader.Service.DistributionService;
+using PartitionLeader.Service.Http;
+using PartitionLeader.Service.Tcp;
 
 namespace PartitionLeader;
 
@@ -16,8 +19,12 @@ public class Startup
         services.AddLogging(config => config.ClearProviders());
 
         services.AddSingleton<IDataStorageRepository, DataStorageRepository>();
+
         services.AddSingleton<IDataStorageService, DataStorageService>();
+        services.AddSingleton<IDistributionService, DistributionService>();
+
         services.AddSingleton<IHttpService, HttpService>();
+        services.AddSingleton<ITcpService, TcpService>();
     }
 
     public Startup(IConfiguration configuration)
@@ -39,10 +46,7 @@ public class Startup
         app.UseHttpsRedirection();
 
         app.UseRouting();
-        app.UseEndpoints(endpoints =>
-        {
-            endpoints.MapControllers();
-        });
+        app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
 
         app.Run();
     }

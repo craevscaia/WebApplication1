@@ -1,4 +1,4 @@
-namespace ClientServer.Models;
+﻿namespace ClientServer.Models;
 
 public class Result
 {

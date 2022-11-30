@@ -1,66 +1,107 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Server.Helpers;
+using Server.Helpers.Mappers;
 using Server.Models;
-using Server.Service;
+using Server.Services.DistributionService;
+using Server.Setting;
 
 namespace Server.Controllers;
-
-using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
 [Route("")]
 public class ServerController : ControllerBase
 {
-    private readonly IDataStorageService _dataStorageService;
-    private readonly IHttpService _httpService;
+    private readonly IDistributionService _distributionService;
 
-    public ServerController(IDataStorageService dataStorageService, IHttpService httpService)
+    public ServerController(IDistributionService distributionService)
     {
-        _dataStorageService = dataStorageService;
-        _httpService = httpService;
+        _distributionService = distributionService;
+    }
+
+
+    [HttpGet("/summary")]
+    public async Task<Result?> GetSummary()
+    {
+        return await Task.FromResult(StorageHelper.GetStatus());
     }
 
     [HttpGet("/all")]
-    public async Task<ICollection<int>> GetAll()
+    public async Task<IDictionary<int, Data>?> GetAll()
     {
-        return await Task.FromResult(_dataStorageService.GetAll().Keys);
+        return await _distributionService.GetAll();
     }
 
     [HttpGet("/get/{id}")]
-    public async Task<KeyValuePair<int, Data>> GetById([FromRoute] int id)
+    public async Task<KeyValuePair<int, Data>?> GetById([FromRoute] int id)
     {
-        return await Task.FromResult(_dataStorageService.GetById(id));
+        return await _distributionService.GetById(id);
     }
 
     [HttpPost]
-    public async Task<Result> Save([FromBody] Data data)
+    public async Task<IList<Result>> Save([FromBody] Data data)
     {
-        await _dataStorageService.Save(data);
-        //TODO : Add result to the list
-        //TODO : Count storage, and generate proper results
-        Console.WriteLine($"I recieved file with name {data.FileName}");
-        return new Result()
+        IList<Result> resultSummaries = new List<Result>();
+        try
         {
-            ServerName = ServerName.Server1,
-            StorageCount = _dataStorageService.GetAll().Count,
-            LastProcessedId = data.Id
-        };
+            resultSummaries = await _distributionService.Save(data);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+        }
+
+        return resultSummaries;
     }
 
     [HttpPut("/update/{id}")]
     public async Task<Data> Update([FromRoute] int id, [FromBody] Data data)
     {
-        return await _dataStorageService.Update(id, data);
+        return await _distributionService.Update(id, data);
     }
 
+
     [HttpDelete("/delete/{id}")]
-    public async Task<Result> Delete([FromRoute] int id)
+    public async Task<IList<Result>> Delete([FromRoute] int id)
     {
-        await _dataStorageService.Delete(id);
+        return await _distributionService.Delete(id);
+    }
 
 
-        return new Result()
+    [HttpPost("/form/save")]
+    public async Task<IList<Result>> Save([FromForm] DataModel dataModel)
+    {
+        if (!Settings.Leader)
         {
-            StorageCount = _dataStorageService.GetAll().Count,
-            LastProcessedId = id
-        };
+            return null;
+        }
+        
+        var data = dataModel.MapData();
+
+        IList<Result> resultSummaries = new List<Result>();
+        try
+        {
+            resultSummaries = await _distributionService.Save(data);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+        }
+
+        return resultSummaries;
+    }
+
+    [HttpPut("/form/update/{id}")]
+    public async Task<Data> Update([FromRoute] int id, [FromForm] DataModel dataModel)
+    {
+        if (!Settings.Leader)
+        {
+            return null;
+        }
+        
+        var data = dataModel.MapData();
+
+        var updateResult = await _distributionService.Update(id, data);
+
+        return updateResult;
     }
 }

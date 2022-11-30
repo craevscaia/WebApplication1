@@ -11,14 +11,14 @@ public class DataStorageRepository : IDataStorageRepository
         _storage = new Dictionary<int, Data>();
     }
 
-    public IDictionary<int, Data> GetAll()
+    public Task<IDictionary<int, Data>> GetAll()
     {
-        return _storage;
+        return Task.FromResult(_storage);
     }
 
-    public KeyValuePair<int, Data> GetById(int id)
+    public Task<KeyValuePair<int, Data>> GetById(int id)
     {
-        return _storage.FirstOrDefault(s => s.Key == id);
+        return Task.FromResult(_storage.FirstOrDefault(s => s.Key == id));
     }
 
     public Task<Result> Save(int id, Data fileData)

@@ -26,3 +26,5 @@ U:\an3\PR\WebApplication1\Server2\obj\Debug\net6.0\refint\Server2.dll
 U:\an3\PR\WebApplication1\Server2\obj\Debug\net6.0\Server2.pdb
 U:\an3\PR\WebApplication1\Server2\obj\Debug\net6.0\Server2.genruntimeconfig.cache
 U:\an3\PR\WebApplication1\Server2\obj\Debug\net6.0\ref\Server2.dll
+U:\an3\PR\WebApplication1\Server2\bin\Debug\net6.0\Setting\appsettings.Development.json
+U:\an3\PR\WebApplication1\Server2\bin\Debug\net6.0\Setting\appsettings.json

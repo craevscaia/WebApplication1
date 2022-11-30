@@ -1,9 +1,9 @@
-namespace ClientServer.Models;
+﻿namespace ClientServer.Models;
 
-public class Data
+public class Data : Entity
 {
     public int Id { get; init; }
     public string StreamData { get; set; }
     public string ContentType { get; set; }
     public string FileName { get; set; }
-}
+}   

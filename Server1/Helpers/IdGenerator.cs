@@ -1,4 +1,4 @@
-namespace ClientServer.Helpers;
+﻿namespace ClientServer.Helpers;
 
 public static class IdGenerator
 {

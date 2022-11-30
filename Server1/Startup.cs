@@ -1,5 +1,10 @@
-using ClientServer.Repository;
-using ClientServer.Service;
+﻿using ClientServer.Repositories;
+using ClientServer.Services.DataService;
+using ClientServer.Services.DistributionService;
+using ClientServer.Services.HealthService;
+using ClientServer.Services.HttpService;
+using ClientServer.Services.Sync;
+using ClientServer.Services.TcpService;
 
 namespace ClientServer;
 
@@ -16,8 +21,16 @@ public class Startup
         services.AddLogging(config => config.ClearProviders());
 
         services.AddSingleton<IDataStorageRepository, DataStorageRepository>();
+
+        services.AddSingleton<ISyncService, SyncService>();
         services.AddSingleton<IDataStorageService, DataStorageService>();
+        services.AddSingleton<IDistributionService, DistributionService>();
+
         services.AddSingleton<IHttpService, HttpService>();
+        services.AddSingleton<IHealthService, HealthService>();
+        services.AddSingleton<ITcpService, TcpService>();
+
+        services.AddHostedService<BackgroundTask.BackgroundTask>();
     }
 
     public Startup(IConfiguration configuration)
@@ -39,10 +52,7 @@ public class Startup
         app.UseHttpsRedirection();
 
         app.UseRouting();
-        app.UseEndpoints(endpoints =>
-        {
-            endpoints.MapControllers();
-        });
+        app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
 
         app.Run();
     }

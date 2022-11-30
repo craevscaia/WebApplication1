@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using PartitionLeader.Helpers;
 using PartitionLeader.Models;
+using PartitionLeader.Service.DataStorage;
 using PartitionLeader.Service.DistributionService;
 
 namespace PartitionLeader.Controllers;
@@ -10,12 +11,17 @@ namespace PartitionLeader.Controllers;
 public class ServerController : ControllerBase
 {
     private readonly IDistributionService _distributionService;
+    private readonly IDataStorageService _dataStorageService;
 
-    public ServerController(IDistributionService distributionService)
+
+    public ServerController(IDistributionService distributionService, IDataStorageService dataStorageService)
     {
         _distributionService = distributionService;
+        _dataStorageService = dataStorageService;
     }
 
+    #region CRUD for partition
+    
     [HttpGet("/check")]
     public Task<bool> CheckStatus()
     {
@@ -51,6 +57,39 @@ public class ServerController : ControllerBase
     }
 
     [HttpPost]
+    public async Task<Result> Save([FromBody] Data data)
+    {
+        var resultSummaries = new Result();
+        try
+        {
+            resultSummaries = await _dataStorageService.Save(data);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+        }
+
+        return resultSummaries;
+    }
+
+    
+    #endregion
+    
+    #region CRUD for servers
+    
+    [HttpGet("servers/all")]
+    public async Task<IDictionary<int, Data>?> GetFromAllServers()
+    {
+        return await _distributionService.GetAll();
+    }
+
+    [HttpGet("/servers/get/{id}")]
+    public async Task<KeyValuePair<int, Data>?> GetByIdFromServer([FromRoute] int id)
+    {
+        return await _distributionService.GetById(id);
+    }
+
+    [HttpPost]
     public async Task<IList<Result>> Save([FromForm] DataModel dataModel)
     {
         var data = dataModel.MapData();
@@ -73,4 +112,6 @@ public class ServerController : ControllerBase
     {
         return await _distributionService.Delete(id);
     }
+    #endregion
+    
 }

@@ -18,7 +18,6 @@ public class ServerController : ControllerBase
         _distributionService = distributionService;
     }
 
-
     [HttpGet("/summary")]
     public async Task<Result?> GetSummary()
     {

@@ -1,12 +1,12 @@
-using PartitionLeader.Service.Synchronization;
+using PartitionLeader.Service.HealthService;
 
 namespace PartitionLeader.BackgroundTask;
 
-public class BackgroundTask : BackgroundService
+public class HealthCheck : BackgroundService
 {
     private readonly IServiceScopeFactory _serviceScopeFactory;
 
-    public BackgroundTask(IServiceScopeFactory serviceScopeFactory)
+    public HealthCheck(IServiceScopeFactory serviceScopeFactory)
     {
         _serviceScopeFactory = serviceScopeFactory;
     }
@@ -15,7 +15,7 @@ public class BackgroundTask : BackgroundService
     {
         await Task.Delay(5000, stoppingToken);
         using var scope = _serviceScopeFactory.CreateScope();
-        var scoped = scope.ServiceProvider.GetRequiredService<ISynchronService>();
-        await scoped.SyncData(stoppingToken);
+        var scoped = scope.ServiceProvider.GetRequiredService<IHealthService>();
+        await scoped.CheckHealth();
     }
 }

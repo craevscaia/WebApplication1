@@ -6,79 +6,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28cb6f56-0cdd-4752-8a4b-36658e432fc3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Helpers/ConsoleHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Helpers/StorageHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Helpers/StreamConverter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/DataModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service/DataStorage/DataStorageService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service/DataStorage/IDataStorageService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service/Http/HttpService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service/Http/IHttpService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service/Tcp/ITcpService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service/Tcp/TcpService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Setting/Settings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/BackgroundTask/BackgroundTask.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Helpers/ConsoleHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Helpers/Mappers/Map.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Helpers/StorageHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Helpers/StreamConverter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Models/DataModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Models/Entity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Repositories/IDataStorageRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Services/DataService/DataStorageService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Services/DataService/IDataStorageService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Services/DistributionService/DistributionService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Services/DistributionService/IDistributionService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Services/HealthService/HealthService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Services/HealthService/IHealthService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Services/HttpService/HttpService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Services/HttpService/IHttpService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Services/StorageStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Services/Sync/ISyncService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Services/Sync/SyncService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Services/TcpService/ITcpService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Services/TcpService/TcpService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Setting/Settings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Setting/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server1/Setting/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/BackgroundTask/BackgroundTask.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Helpers/ConsoleHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Helpers/Mappers/Map.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Helpers/StorageHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Helpers/StreamConverter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Models/DataModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Models/Entity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Repositories/IDataStorageRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Services/DataService/DataStorageService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Services/DataService/IDataStorageService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Services/DistributionService/DistributionService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Services/DistributionService/IDistributionService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Services/HealthService/HealthService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Services/HealthService/IHealthService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Services/HttpService/HttpService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Services/HttpService/IHttpService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Services/StorageStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Services/Sync/ISyncService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Services/Sync/SyncService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Services/TcpService/ITcpService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Services/TcpService/TcpService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Setting/Settings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Setting/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server2/Setting/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PartitionLeader.dir/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PartitionLeader.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PartitionLeader.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackgroundTask/BackgroundTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BackgroundTask/BackgroundTask.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/ServerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/ServerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Helpers/Map.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Helpers/Map.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Helpers/PrintConsole.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PartitionLeader.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PartitionLeader.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Repository/DataStorageRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Repository/DataStorageRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Repository/IDataStorageRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Repository/IDataStorageRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service/DataStorageService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service/HttpService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service/IDataStorageService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service/IHttpService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service/StorageStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Service/StorageStatus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Settings/Settings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Helpers/StorageHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Helpers/StorageHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Result.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Result.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Synchronization/ISynchronService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Service/Synchronization/ISynchronService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Synchronization/SynchronService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Service/Synchronization/SynchronService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/PartitionLeader.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/PartitionLeader.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/PartitionLeader.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/PartitionLeader.pdb" afterDir="false" />
@@ -89,63 +23,6 @@
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/PartitionLeader.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/PartitionLeader.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server1/Controllers/ServerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server1/Controllers/ServerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/Helpers/IdGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server1/Helpers/IdGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/Helpers/Map.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/Helpers/PrintConsole.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/Models/Data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server1/Models/Data.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/Models/Result.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server1/Models/Result.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/Models/ServerName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server1/Models/ServerName.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/Models/UploadedFile.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Server1/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/Repository/DataStorageRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server2/Repositories/DataStorageRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/Repository/IDataStorageRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/Server1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Server1/Server1.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/Service/DataStorageService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/Service/HttpService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/Service/IDataStorageService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/Service/IHttpService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/Service/StorageStatus.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/Settings/Settings.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server1/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/bin/Debug/net6.0/Server1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Server1/bin/Debug/net6.0/Server1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/bin/Debug/net6.0/Server1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Server1/bin/Debug/net6.0/Server1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/obj/Debug/net6.0/Server1.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Server1/obj/Debug/net6.0/Server1.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/obj/Debug/net6.0/Server1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Server1/obj/Debug/net6.0/Server1.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/obj/Debug/net6.0/Server1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Server1/obj/Debug/net6.0/Server1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/obj/Debug/net6.0/Server1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Server1/obj/Debug/net6.0/Server1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/obj/Debug/net6.0/ref/Server1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Server1/obj/Debug/net6.0/ref/Server1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/obj/Debug/net6.0/refint/Server1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Server1/obj/Debug/net6.0/refint/Server1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server1/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/../Server1/obj/staticwebassets.pack.sentinel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/Controllers/ServerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server2/Controllers/ServerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../Server2/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/Helpers/IdGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server2/Helpers/IdGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/Helpers/Map.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/Helpers/PrintConsole.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/Models/Data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server2/Models/Data.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/Models/Result.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server2/Models/Result.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/Models/ServerName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server2/Models/ServerName.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/Models/UploadedFile.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server2/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Server2/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/Repository/DataStorageRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server1/Repositories/DataStorageRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/Repository/IDataStorageRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/Server2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Server2/Server2.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/Service/DataStorageService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/Service/HttpService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/Service/IDataStorageService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/Service/IHttpService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/Service/StorageStatus.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/Settings/Settings.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server2/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/bin/Debug/net6.0/Server2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Server2/bin/Debug/net6.0/Server2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/bin/Debug/net6.0/Server2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Server2/bin/Debug/net6.0/Server2.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/obj/Debug/net6.0/Server2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Server2/obj/Debug/net6.0/Server2.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/obj/Debug/net6.0/Server2.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Server2/obj/Debug/net6.0/Server2.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/obj/Debug/net6.0/Server2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Server2/obj/Debug/net6.0/Server2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/obj/Debug/net6.0/Server2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Server2/obj/Debug/net6.0/Server2.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/obj/Debug/net6.0/ref/Server2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Server2/obj/Debug/net6.0/ref/Server2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/obj/Debug/net6.0/refint/Server2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Server2/obj/Debug/net6.0/refint/Server2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server2/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/../Server2/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669669239670</updated>
       <workItem from="1669669247496" duration="4547000" />
-      <workItem from="1669750226629" duration="2920000" />
+      <workItem from="1669750226629" duration="9352000" />
     </task>
     <servers />
   </component>
